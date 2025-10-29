@@ -27,7 +27,7 @@ abstract class DioClient{
         enabled: kDebugMode,
       ),
     );
-    dio.interceptors.add(DioInterceptors(sl<LocalStorage>()));
+    dio.interceptors.add(DioInterceptors());
 
     return dio;
   }

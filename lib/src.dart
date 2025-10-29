@@ -43,3 +43,4 @@ export 'package:flutter_gen_core/flutter_generator.dart';
 export 'core/core.dart';
 export 'features/features.dart';
 export  'package:flutter/foundation.dart';
+export 'dart:io';

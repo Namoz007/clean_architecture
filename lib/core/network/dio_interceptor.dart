@@ -1,9 +1,7 @@
 import 'package:clean_architecture/src.dart';
 
 class DioInterceptors extends Interceptor {
-  final LocalStorage _storageService;
 
-  DioInterceptors(this._storageService);
 
   @override
   void onRequest(
@@ -11,13 +9,7 @@ class DioInterceptors extends Interceptor {
       RequestInterceptorHandler handler,
       ) async {
 
-    // String? token = await _storageService.fetchToken();,
-    // String locale = await _storageService.fetchLocale();
-    // if (token != null) {
-    //   options.headers.addAll({"Authorization": "Bearer $token"});
-    // }
-
-    // options.headers.addAll({"X-User-language": locale});
+    // options.headers.addAll({"Authorization": token});
 
     return super.onRequest(options, handler);
   }
@@ -27,37 +19,6 @@ class DioInterceptors extends Interceptor {
       DioException err,
       ErrorInterceptorHandler handler,
       ) async {
-    if (err.response != null && err.response!.statusCode != null) {
-      if (err.response?.data is String) {
-        final errorMessage = err.response?.data as String?;
-        // final error = ErrorModel(
-        //   detail: errorMessage?.replaceAll(RegExp(r'<[^>]+>'), '') ?? '',
-        // );
-        // handler.next(
-        //   DioException(
-        //     requestOptions: err.requestOptions,
-        //     response: Response(
-        //       requestOptions: err.requestOptions,
-        //       data: error.toJson(),
-        //     ),
-        //   ),
-        // );
-        return;
-      } else {
-        handler.next(err);
-        return;
-      }
-    }
-    // const error = ErrorModel(detail: LocaleKeys.unexpectedError);
-    // handler.next(
-      // DioException(
-      //   requestOptions: err.requestOptions,
-      //   response: Response(
-      //     requestOptions: err.requestOptions,
-      //     data: error.toJson(),
-      //   ),
-      // ),
-    // );
-    return;
+    return super.onError(err, handler);
   }
 }

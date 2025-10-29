@@ -1,0 +1,109 @@
+name: clean_architecture
+description: "Flutter architecture"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #UI
+  flutter_svg: ^2.2.1
+  skeletonizer: ^2.1.0+1
+  readmore: ^3.0.0
+  carousel_slider: ^5.1.1
+  cupertino_icons: ^1.0.8
+  mask_text_input_formatter: ^2.9.0
+  toastification: ^3.0.3
+  cached_network_image: ^3.4.1
+  smooth_page_indicator: ^1.2.1
+  awesome_dialog: ^3.3.0
+  easy_localization: ^3.0.8
+
+
+
+  #state management
+  bloc: ^9.1.0
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+  rxdart: ^0.28.0
+
+  #network
+  dio: ^5.9.0
+  network_info_plus: ^7.0.0
+
+  #navigation
+  go_router: ^16.3.0
+  url_launcher: ^6.3.2
+
+  #dependency_injection
+  get_it: ^8.2.0
+  permission_handler: ^12.0.1
+  geolocator: ^14.0.2
+  injectable: ^2.5.2
+
+  #helpers
+  path_provider: ^2.1.5
+  logger: ^2.6.2
+  pretty_dio_logger: ^1.4.0
+  image_picker: ^1.2.0
+  file_picker: ^10.3.3
+  flutter_phone_direct_caller: ^2.2.1
+  fpdart: ^1.1.1
+  intl: ^0.20.2
+
+  #animations
+  animations: ^2.1.0
+  animate_do: ^4.2.0
+  animated_text_kit: ^4.3.0
+  lottie: ^3.3.2
+  flutter_slidable: ^4.0.3
+
+  #loading indicators
+  pull_to_refresh: ^2.0.0
+  loading_animation_widget: ^1.3.0
+
+
+  #storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  localstorage: ^6.0.0
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^9.2.4
+
+
+  #generators
+  freezed: ^3.2.3
+  freezed_annotation: ^3.1.0
+  share_plus: ^12.0.1
+  flutter_gen: ^5.12.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  #developer generators
+  json_serializable: ^6.11.1
+  build_runner: ^2.10.1
+  flutter_launcher_icons: ^0.14.4
+  injectable_generator: ^2.9.0
+
+flutter:
+  uses-material-design: true
+
+#  assets:
+#    - assets/
+#
+#  fonts:
+#    - family: font name
+#      fonts:
+#        - asset: font path
+#          weight: font weight
+
+
