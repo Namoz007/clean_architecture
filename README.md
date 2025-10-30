@@ -1,22 +1,21 @@
-# Clean Architecture Flutter Template
+# 🧱 Clean Architecture — Flutter Project Template
 
-A production-ready Flutter boilerplate project built using **Clean Architecture**, **Bloc**, **Dio**, and **GetIt/Injectable** for dependency injection.  
-This template provides a scalable structure suitable for mid & large size applications following SOLID principles and best practices.
+A **scalable**, **testable**, and **maintainable** Flutter project built with **Clean Architecture principles**.  
+This repository helps developers quickly start a new Flutter project with a clear, modular structure that follows best practices.
+
+---
+
+## 🌍 Overview
+
+This project demonstrates how to structure your Flutter application using **Clean Architecture**.  
+It separates the codebase into **Presentation**, **Domain**, and **Data** layers — making the app easy to **maintain**, **test**, and **extend**.
 
 ---
 
-## 📌 Features
+## 🧩 Architecture Layers
 
-✅ Clean Architecture (Presentation → Domain → Data)  
-✅ Dependency Injection (GetIt + Injectable)  
-✅ State Management with Bloc & RxDart  
-✅ Dio for networking with interceptors & logging  
-✅ Local Storage (Hive, SharedPreferences, LocalStorage, Secure Storage)  
-✅ Navigation using GoRouter  
-✅ Localization with Easy Localization  
-✅ Permissions (permission_handler)  
-✅ Device features: Geolocator, Network Info, File Picker, Image Picker, Phone Dialer  
-✅ UI helpers (skeleton loaders, animations, page indicators, carousels)  
-✅ Advanced code generation with Freezed, JsonSerializable & Build Runner
-
----
+```mermaid
+graph TD;
+    A[Presentation Layer] --> B[Domain Layer];
+    B --> C[Data Layer];
+    C --> D[External APIs, Database, Local Storage];
