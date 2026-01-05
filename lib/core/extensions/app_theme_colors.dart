@@ -1,5 +1,4 @@
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
 class AppThemeColors extends ThemeExtension<AppThemeColors>{
 
   AppThemeColors();

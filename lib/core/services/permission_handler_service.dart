@@ -1,7 +1,7 @@
-import 'package:clean_architecture/src.dart';
+import "../../src.dart";
 
 @lazySingleton
-abstract class PermissionHandlerService{
+class PermissionHandlerService{
 
   /// Check for permissions
 

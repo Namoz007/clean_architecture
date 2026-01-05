@@ -1,5 +1,6 @@
-import 'package:clean_architecture/src.dart';
+import '../../src.dart';
 
+@lazySingleton
 class SecureStorageService {
   final FlutterSecureStorage _secureStorage;
 

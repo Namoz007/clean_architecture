@@ -1,5 +1,4 @@
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
 extension PaddingExtension on Widget{
   Widget paddingAll(double padding) => Padding(
     padding: EdgeInsets.all(padding),

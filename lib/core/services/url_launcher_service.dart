@@ -1,5 +1,6 @@
-import 'package:clean_architecture/src.dart';
+import "../../src.dart";
 
+@lazySingleton
 class UrlLauncherService {
   Future<bool> canLaunchCustomUrl(String url) async {
     final Uri uri = Uri.parse(url);

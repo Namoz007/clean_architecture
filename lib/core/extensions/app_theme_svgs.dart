@@ -1,6 +1,5 @@
 
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
 class AppThemeSvgs extends ThemeExtension<AppThemeSvgs>{
 
   AppThemeSvgs();

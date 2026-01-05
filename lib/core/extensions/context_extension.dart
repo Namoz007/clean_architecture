@@ -1,6 +1,5 @@
 
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
 extension ContextExtension on BuildContext{
   MediaQueryData get mq => MediaQuery.of(this);
 

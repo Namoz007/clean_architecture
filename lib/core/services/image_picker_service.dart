@@ -1,6 +1,5 @@
 
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
 @lazySingleton
 class ImagePickerService{
   late final ImagePicker _picker;

@@ -1,6 +1,6 @@
 
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
+@lazySingleton
 class PathProviderService {
   Future<Directory> getDocumentsDirectory() async {
     return await getApplicationDocumentsDirectory();

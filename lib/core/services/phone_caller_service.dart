@@ -1,5 +1,4 @@
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
 @lazySingleton
 class PhoneCallerService {
   Future<bool> callDirect(String phoneNumber) async {

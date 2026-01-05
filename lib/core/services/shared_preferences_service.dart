@@ -1,6 +1,7 @@
-import 'package:clean_architecture/src.dart';
+import '../../src.dart';
 
-abstract class SharedPreferencesService{
+@lazySingleton
+class SharedPreferencesService{
   late final SharedPreferences _pref;
 
   SharedPreferencesService({required SharedPreferences pref}) : _pref = pref;

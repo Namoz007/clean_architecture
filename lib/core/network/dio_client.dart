@@ -1,9 +1,8 @@
-import 'package:clean_architecture/src.dart';
+import "../../src.dart";
 
-abstract class DioClient{
-
+abstract class DioClient {
   @lazySingleton
-  Dio provideDio(LocalStorage localStorage) {
+  Dio provideDio() {
     final dio = Dio(
       BaseOptions(
         baseUrl: ApiConst.baseUrl,
@@ -14,7 +13,8 @@ abstract class DioClient{
         followRedirects: true,
         maxRedirects: 5,
         contentType: Headers.jsonContentType,
-        validateStatus: (status) => status != null && status >= 200 && status < 300,
+        validateStatus: (status) =>
+            status != null && status >= 200 && status < 300,
         receiveDataWhenStatusError: false,
       ),
     );
@@ -31,7 +31,4 @@ abstract class DioClient{
 
     return dio;
   }
-
-
-
 }

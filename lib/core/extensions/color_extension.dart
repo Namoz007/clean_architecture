@@ -1,5 +1,4 @@
-import 'package:clean_architecture/src.dart';
-
+import '../../src.dart';
 extension ColorOpacityExtension on Color {
   Color newWithOpacity(double amount) {
     assert(
